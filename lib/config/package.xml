@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<calculator>
+	<calc_group id="0" name="HTL" description="">
+	  <title>Quick IT Support Cost Calculator</title>
+	  <panel_type>Yes</panel_type>
+	  <header_type>plain</header_type>
+	  <number_column>2</number_column>	  
+	  <denomination>£</denomination>
+	  <constantvar>
+	  	 <variable id="0" init="5">Price5</variable>
+		 <variable id="1" init="6">Price6</variable>
+		 <variable id="2" init="7">Price7</variable>
+		 <variable id="3" init="8">Price8</variable>
+	  	 <variable id="4" init="9">Price9</variable>
+		 <variable id="5" init="10">Price10</variable>
+		 <variable id="6" init="15">Price15</variable>	
+		 <variable id="7" init="24">Price24</variable>	
+		 <variable id="8" init="26">Price26</variable>	
+		 <variable id="9" init="28">Price28</variable>	
+		 <variable id="10" init="30">Price30</variable>	 
+		 <variable id="11" init="30">Price32</variable>	
+		 <variable id="12" init="110">Price110</variable> 
+		 <variable id="13" init="120">Price120</variable>
+		 <variable id="14" init="130">Price130</variable>
+		 <variable id="15" init="140">Price140</variable>
+		 <variable id="16" init="32">Price150</variable> 
+	  </constantvar>  
+	  <valueranges>
+	  	  <valuerange id="0" object="PSlider1" value="Price32" init="1" max="5">s1</valuerange>
+	  	  <valuerange id="1" object="PSlider1" value="Price30" init="6" max="10">s2</valuerange>
+	      <valuerange id="2" object="PSlider1" value="Price28" init="11" max="20">s3</valuerange>
+	  	  <valuerange id="3" object="PSlider1" value="Price26" init="21" max="50">s4</valuerange>
+	      <valuerange id="4" object="PSlider1" value="Price24" init="51" max="100">s5</valuerange>
+	      <valuerange id="5" object="PSlider3" value="Price32" init="1" max="5">s1</valuerange>
+	  	  <valuerange id="6" object="PSlider3" value="Price30" init="6" max="10">s2</valuerange>
+	      <valuerange id="7" object="PSlider3" value="Price28" init="11" max="20">s3</valuerange>
+	  	  <valuerange id="8" object="PSlider3" value="Price26" init="21" max="50">s4</valuerange>
+	      <valuerange id="9" object="PSlider3" value="Price24" init="51" max="100">s5</valuerange>
+		  <valuerange id="10" object="PSlider5" value="Price9" init="1" max="5">s1</valuerange>
+	  	  <valuerange id="11" object="PSlider5" value="Price8" init="6" max="10">s2</valuerange>
+	      <valuerange id="12" object="PSlider5" value="Price7" init="11" max="20">s3</valuerange>
+	  	  <valuerange id="13" object="PSlider5" value="Price6" init="21" max="50">s4</valuerange>
+	      <valuerange id="14" object="PSlider5" value="Price5" init="51" max="100">s5</valuerange>
+	      <valuerange id="15" object="PSlider7" value="Price9" init="1" max="5">s1</valuerange>
+	  	  <valuerange id="16" object="PSlider7" value="Price8" init="6" max="10">s2</valuerange>
+	      <valuerange id="17" object="PSlider7" value="Price7" init="11" max="20">s3</valuerange>
+	  	  <valuerange id="18" object="PSlider7" value="Price6" init="21" max="50">s4</valuerange>
+	      <valuerange id="19" object="PSlider7" value="Price5" init="51" max="100">s5</valuerange>
+	      <valuerange id="20" object="PSlider2" value="Price15" init="1" max="5">s1</valuerange>
+	  	  <valuerange id="21" object="PSlider2" value="Price10" init="6" max="10">s2</valuerange>
+	      <valuerange id="22" object="PSlider2" value="Price5" init="11" max="25">s3</valuerange>
+  		  <valuerange id="23" object="PSlider4" value="Price30" init="1" max="5">s1</valuerange>		  
+	  	  <valuerange id="24" object="PSlider6" value="Price150" init="1" max="1">s1</valuerange>
+	      <valuerange id="25" object="PSlider6" value="Price140" init="2" max="2">s2</valuerange>
+	  	  <valuerange id="26" object="PSlider6" value="Price130" init="3" max="5">s3</valuerange>
+	      <valuerange id="27" object="PSlider6" value="Price120" init="6" max="10">s4</valuerange>
+  		  <valuerange id="28" object="PSlider6" value="Price110" init="11" max="25">s5</valuerange>	
+	  </valueranges>
+	  <changevar>	  	  
+		 <changevariable id="0" init="0" target="slider1" defaultconstant="Price32" changeby="multiply">PSlider1</changevariable>   
+		 <changevariable id="1" init="0" target="slider2" defaultconstant="Price15" changeby="multiply">PSlider2</changevariable>     
+		 <changevariable id="2" init="0" target="slider3" defaultconstant="Price32" changeby="multiply">PSlider3</changevariable>     
+		 <changevariable id="3" init="0" target="slider4" defaultconstant="Price30" changeby="multiply">PSlider4</changevariable>     
+		 <changevariable id="4" init="0" target="slider5" defaultconstant="Price9" changeby="multiply">PSlider5</changevariable>     
+		 <changevariable id="5" init="0" target="slider6" defaultconstant="Price150" changeby="multiply">PSlider6</changevariable>     
+		 <changevariable id="6" init="0" target="slider7" defaultconstant="Price9" changeby="multiply">PSlider7</changevariable>     
+	  </changevar> 
+	  <resultboxes>
+	    <position>foot</position>
+	  	<boxgroup id="1">
+			<label>Total Monthly Cost</label>
+			<id>objid1</id>			
+			<default>0</default>
+			<withborder>yes</withborder>
+			<roundnumber>fixed</roundnumber>
+            <formula>( PSlider1 * changeval ) + ( PSlider2 * changeval ) + ( PSlider3 * changeval ) + ( PSlider4 * changeval ) + ( PSlider5 * changeval ) + ( PSlider6 * changeval ) + ( PSlider7 * changeval )</formula>
+			<email_label>totalmonthlycost</email_label>			 
+		</boxgroup>		
+	  </resultboxes>
+	  <onload_general>	
+	  	   <onload_generalgroup id="1" resultholder="" roundnumber="yes" type="exe">base.setSelectedItem()</onload_generalgroup>	 
+		   <onload_generalgroup id="2" resultholder="" roundnumber="yes" type="exe">base.updateChangeVariables()</onload_generalgroup>	
+		   <onload_generalgroup id="3" resultholder="" roundnumber="yes" type="exe">base.updateResultBox(model)</onload_generalgroup>
+	  </onload_general>
+	  <group_objects>
+	  	<object_values id="0">
+		  <type>range</type>
+		  <header>Computers</header>
+		  <id>slider1</id>
+		  <label></label>
+		  <default>0</default>
+		  <tooltip></tooltip>
+		  <required>0</required>
+		  <readonly>no</readonly>
+		  <email_label>computers</email_label>
+		  <included_in_more_option>No</included_in_more_option>
+		  <data>
+		  	<contents id="0">
+				<min>0</min>
+				<max>100</max>
+				<step>1</step>
+				<value>32</value>				
+			</contents>
+		  </data> 
+          <addedcontainer></addedcontainer>
+		  <actions>
+		    <event action="change" function="" extendedfunction="base.updateResultBox(model)"></event>
+		  </actions>
+		</object_values>		
+		<object_values id="1">
+		  <type>range</type>
+		  <header>Network Printer</header>
+		  <id>slider2</id>
+		  <label></label>
+		  <default>0</default>
+		  <tooltip></tooltip>
+		  <required>0</required>
+		  <readonly>no</readonly>
+		  <email_label>networkprinter</email_label>
+		  <included_in_more_option>No</included_in_more_option>
+		  <data>
+		  	<contents id="0">
+				<min>0</min>
+				<max>25</max>
+				<step>1</step>
+				<value>0</value>				
+			</contents>
+		  </data> 
+          <addedcontainer></addedcontainer>
+		  <actions>
+		    <event action="change" function="" extendedfunction="base.updateResultBox(model)"></event>
+		  </actions>
+		</object_values>
+		<object_values id="2">
+		  <type>range</type>
+		  <header>Laptops</header>
+		  <id>slider3</id>
+		  <label></label>
+		  <default>0</default>
+		  <tooltip></tooltip>
+		  <required>0</required>
+		  <readonly>no</readonly>
+		  <email_label>laptops</email_label>
+		  <included_in_more_option>No</included_in_more_option>
+		  <data>
+		  	<contents id="0">
+				<min>0</min>
+				<max>100</max>
+				<step>1</step>
+				<value>0</value>				
+			</contents>
+		  </data> 
+          <addedcontainer></addedcontainer>
+		  <actions>
+		    <event action="change" function="" extendedfunction="base.updateResultBox(model)"></event>
+		  </actions>
+		</object_values>	
+		<object_values id="3">
+		  <type>range</type>
+		  <header>Router / Firewall</header>
+		  <id>slider4</id>
+		  <label></label>
+		  <default>0</default>
+		  <tooltip></tooltip>
+		  <required>0</required>
+		  <readonly>no</readonly>
+		  <email_label>routerfirewall</email_label>
+		  <included_in_more_option>No</included_in_more_option>
+		  <data>
+		  	<contents id="0">
+				<min>0</min>
+				<max>10</max>
+				<step>1</step>
+				<value>0</value>				
+			</contents>
+		  </data> 
+          <addedcontainer></addedcontainer>
+		  <actions>
+		    <event action="change" function="" extendedfunction="base.updateResultBox(model)"></event>
+		  </actions>
+		</object_values>	
+		<object_values id="4">
+		  <type>range</type>
+		  <header>Desk Phones</header>
+		  <id>slider5</id>
+		  <label></label>
+		  <default>0</default>
+		  <tooltip></tooltip>
+		  <required>0</required>
+		  <readonly>no</readonly>
+		  <email_label>deskphones</email_label>
+		  <included_in_more_option>No</included_in_more_option>
+		  <data>
+		  	<contents id="0">
+				<min>0</min>
+				<max>100</max>
+				<step>1</step>
+				<value>0</value>				
+			</contents>
+		  </data> 
+          <addedcontainer></addedcontainer>
+		  <actions>
+		    <event action="change" function="" extendedfunction="base.updateResultBox(model)"></event>
+		  </actions>
+		</object_values> 
+		<object_values id="5">
+		  <type>range</type>
+		  <header>Server</header>
+		  <id>slider6</id>
+		  <label></label>
+		  <default>0</default>
+		  <tooltip></tooltip>
+		  <required>0</required>
+		  <readonly>no</readonly>
+		  <email_label>server</email_label>
+		  <included_in_more_option>No</included_in_more_option>
+		  <data>
+		  	<contents id="0">
+				<min>0</min>
+				<max>25</max>
+				<step>1</step>
+				<value>0</value>				
+			</contents>
+		  </data> 
+          <addedcontainer></addedcontainer>
+		  <actions>
+		    <event action="change" function="" extendedfunction="base.updateResultBox(model)"></event>
+		  </actions>
+		</object_values>
+		<object_values id="6">
+		  <type>range</type>
+		  <header>Smartphone</header>
+		  <id>slider7</id>
+		  <label></label>
+		  <default>0</default>
+		  <tooltip></tooltip>
+		  <required>0</required>
+		  <readonly>no</readonly>
+		  <email_label>iphoneblackberry</email_label>
+		  <included_in_more_option>No</included_in_more_option>
+		  <data>
+		  	<contents id="0">
+				<min>0</min>
+				<max>100</max>
+				<step>1</step>
+				<value>0</value>				
+			</contents>
+		  </data> 
+          <addedcontainer></addedcontainer>
+		  <actions>
+		    <event action="change" function="" extendedfunction="base.updateResultBox(model)"></event>
+		  </actions>
+		</object_values>
+		<object_values id="7">
+		  <type>button-submit</type>
+		  <header></header>
+		  <id>bs1</id>
+		  <label>Email Me My Quote</label>	
+		  <label2></label2>	  
+		  <rounds>Yes</rounds>
+		  <default></default>
+		  <tooltip></tooltip>
+		  <required></required>
+		  <data></data>
+		  <addedcontainer></addedcontainer>
+		  <actions>
+		    <event action="click" function="base.emailAction(model)" extendedfunction="">
+		    		<actiongroups id="0" resultholder="" roundnumber="no" type="fetch" other-value="">slider1|slider2|slider3|slider4|slider5|slider6|slider7|objid1</actiongroups>
+		    </event>
+		  </actions>		   
+		</object_values>
+	  </group_objects>
+	  <email_form>
+	  	<email_body>
+			<item_node name="client_firstname" label="First Name" type="text" function="" required="1" default="" />
+			<item_node name="client_lastname" label="Last Name" type="text" function="" required="1" default="" />
+			<item_node name="company_name" label="Company Name" type="text" function="" required="1" default="" />
+			<item_node name="client_email" label="Email" type="text" function="base.isEmail(x)" required="1" default="" />
+			<item_node name="client_phone" label="Phone" type="text" function="base.isPhone(x)" required="1" default="" />			
+		</email_body>
+		<email_button>
+			<button_node label="Cancel" trigger="modal-close" />
+			<button_node label="Submit Data" trigger="send" />
+		</email_button>
+	  </email_form>	      
+	</calc_group>
+	<calc_group id="1" name="MC" description="">
+	  <title></title>
+	  <panel_type>No</panel_type>
+	  <header_type>primary_header</header_type>
+	  <number_column>1</number_column>	
+	  <denomination>£</denomination> 
+	  <constantvar>
+	  	 <variable id="0" init="150">PricePerTB2</variable>		  
+	  </constantvar>
+	  <changevar>
+	  	 <changevariable id="0" init="0" target="dropdown1_2">Dropdowns2</changevariable>	
+		 <changevariable id="2" init="0" target="slider1_2">SliderU2</changevariable> 
+		 <changevariable id="3" init="0" target="slider2_2">SliderT2</changevariable>   
+	  </changevar> 
+	  <resultboxes>
+	    <position>head</position>
+	  	<boxgroup id="0">
+			<label>Total per month:</label>
+			<id>objid1_2</id>			
+			<default></default>
+			<withborder>yes</withborder>
+			<roundnumber>no</roundnumber>
+			<formula>((( SliderT2 * PricePerTB2 ) * SliderU2) + (SliderU2 * Dropdowns2))</formula>
+		</boxgroup>		 
+	  </resultboxes>
+	  <onload_general>	
+	  	   <onload_generalgroup id="1" resultholder="" roundnumber="yes" type="exe">base.setSelectedItem()</onload_generalgroup>	 	 
+		   <onload_generalgroup id="2" resultholder="" roundnumber="yes" type="exe">base.updateChangeVariables()</onload_generalgroup>	
+		   <onload_generalgroup id="3" resultholder="" roundnumber="yes" type="exe">base.updateResultBox(model)</onload_generalgroup>
+	  </onload_general>	   
+	  <group_objects>
+	  	<object_values id="0">
+		  <type>range</type>
+		  <header>How many user mailboxes do you want?</header>
+		  <id>slider1_2</id>
+		  <label></label>
+		  <default>0</default>
+		  <tooltip></tooltip>
+		  <required>0</required>
+		  <readonly>no</readonly>
+		  <email_label>Mailboxes number</email_label>
+		  <data>
+		  	<contents id="0">
+				<min>5</min>
+				<max>100</max>
+				<step>1</step>
+				<value>5</value>
+			</contents>
+		  </data> 
+		  <addedcontainer></addedcontainer> 
+          <actions>
+		    <event action="change" function="" extendedfunction="base.updateResultBox(model)"></event>
+		  </actions>
+		</object_values> 
+		<object_values id="1">
+		  <type>range</type>
+		  <header>How much storage would you like?</header>
+		  <id>slider2_2</id>
+		  <label></label>
+		  <default>0</default>
+		  <tooltip></tooltip>
+		  <required>0</required>
+		  <readonly>no</readonly>
+		  <email_label>Storage value</email_label>
+		  <data>
+		  	<contents id="0">
+				<min>0.5</min>
+				<max>10</max>
+				<step>0.5</step>
+				<value>0.5</value>
+			</contents>
+		  </data>
+		  <addedcontainer></addedcontainer> 
+		  <actions>
+		    <event action="change" function="" extendedfunction="base.updateResultBox(model)"></event>
+		  </actions>
+		</object_values> 
+		<object_values id="2">
+		  <type>dropdown</type>
+		  <header>Protection level</header>
+		  <id>dropdown1_2</id>
+		  <label>Choose a value</label>
+		  <default></default>
+		  <tooltip>Choose a value</tooltip>
+		  <required>0</required>
+		  <readonly>no</readonly>
+		  <email_label>Protection level</email_label>
+		  <data>
+		  	<contents id="0">
+				<text>Serviced cloud anti-spam and virus +£0</text>
+				<value>0</value>
+				<selected>yes</selected>				 
+			</contents>
+			<contents id="1">
+				<text>Mimecast +£4</text>
+				<value>4</value>
+				<selected>no</selected>				 
+			</contents>			 			 
+		  </data>
+		  <addedcontainer></addedcontainer> 
+		  <actions>
+		    <event action="change" function="" extendedfunction="base.updateResultBox(model)"></event>
+		  </actions>
+		</object_values>
+		<object_values id="3">
+		  <type>button-submit</type>
+		  <header></header>
+		  <id>bs2</id>
+		  <label>Email the result to me</label>
+		  <default></default>
+                  <tooltip></tooltip>
+                  <required></required>
+		  <data></data>
+		  <addedcontainer></addedcontainer>
+		  <actions>
+		    <event action="click" function="base.emailAction()" extendedfunction="">
+		    		<actiongroups id="0" resultholder="" roundnumber="no" type="fetch" other-value="">slider1_2|slider2_2|dropdown1_2</actiongroups>
+		    </event>
+		  </actions>		   
+		</object_values> 
+	  </group_objects>
+	</calc_group>
+</calculator>

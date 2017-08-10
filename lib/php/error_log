@@ -1,0 +1,84 @@
+[14-Dec-2015 02:35:05 UTC] PHP Fatal error:  Uncaught exception 'Mautic\Exception\IncorrectParametersReturnedException' with message 'Incorrect access token parameters returned: ???' in /home/servicedcloudv5/public_html/modules/mod_vcalc/lib/php/Mautic/Auth/OAuth.php:505
+Stack trace:
+#0 /home/servicedcloudv5/public_html/modules/mod_vcalc/lib/php/Mautic/Auth/OAuth.php(408): Mautic\Auth\OAuth->requestToken()
+#1 /home/servicedcloudv5/public_html/modules/mod_vcalc/lib/php/comMautic.php(49): Mautic\Auth\OAuth->validateAccessToken()
+#2 /home/servicedcloudv5/public_html/modules/mod_vcalc/lib/php/comEmail.php(9): include('/home/servicedc...')
+#3 {main}
+  thrown in /home/servicedcloudv5/public_html/modules/mod_vcalc/lib/php/Mautic/Auth/OAuth.php on line 505
+[27-Aug-2016 02:56:34 UTC] PHP Fatal error:  Uncaught exception 'Mautic\Exception\UnexpectedResponseFormatException' with message 'The response returned is in an unexpected format.' in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php:789
+Stack trace:
+#0 /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php(474): Mautic\Auth\OAuth->makeRequest('http://ww1.htl....', Array, 'POST', Array)
+#1 /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php(408): Mautic\Auth\OAuth->requestToken()
+#2 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comMautic.php(50): Mautic\Auth\OAuth->validateAccessToken()
+#3 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comEmail.php(9): include('/home/htlv2/pub...')
+#4 {main}
+  thrown in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php on line 789
+[27-Aug-2016 06:50:09 UTC] PHP Fatal error:  Uncaught exception 'Mautic\Exception\IncorrectParametersReturnedException' with message 'Incorrect access token parameters returned: Array' in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php:505
+Stack trace:
+#0 /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php(408): Mautic\Auth\OAuth->requestToken()
+#1 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comMautic.php(50): Mautic\Auth\OAuth->validateAccessToken()
+#2 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comEmail.php(9): include('/home/htlv2/pub...')
+#3 {main}
+  thrown in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php on line 505
+[27-Aug-2016 06:59:21 UTC] PHP Fatal error:  Uncaught exception 'Mautic\Exception\IncorrectParametersReturnedException' with message 'Incorrect access token parameters returned: Array' in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php:505
+Stack trace:
+#0 /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php(408): Mautic\Auth\OAuth->requestToken()
+#1 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comMautic.php(50): Mautic\Auth\OAuth->validateAccessToken()
+#2 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comEmail.php(9): include('/home/htlv2/pub...')
+#3 {main}
+  thrown in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php on line 505
+[14-Sep-2016 05:30:15 UTC] PHP Fatal error:  Uncaught exception 'Mautic\Exception\IncorrectParametersReturnedException' with message 'Incorrect access token parameters returned: Array' in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php:505
+Stack trace:
+#0 /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php(408): Mautic\Auth\OAuth->requestToken()
+#1 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comMautic.php(50): Mautic\Auth\OAuth->validateAccessToken()
+#2 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comEmail.php(9): include('/home/htlv2/pub...')
+#3 {main}
+  thrown in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php on line 505
+[14-Sep-2016 05:32:11 UTC] PHP Fatal error:  Uncaught exception 'Mautic\Exception\IncorrectParametersReturnedException' with message 'Incorrect access token parameters returned: Array' in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php:505
+Stack trace:
+#0 /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php(408): Mautic\Auth\OAuth->requestToken()
+#1 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comMautic.php(50): Mautic\Auth\OAuth->validateAccessToken()
+#2 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comEmail.php(9): include('/home/htlv2/pub...')
+#3 {main}
+  thrown in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php on line 505
+[14-Sep-2016 08:11:22 UTC] PHP Fatal error:  Uncaught exception 'Mautic\Exception\IncorrectParametersReturnedException' with message 'Incorrect access token parameters returned: Array' in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php:505
+Stack trace:
+#0 /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php(408): Mautic\Auth\OAuth->requestToken()
+#1 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comMautic.php(50): Mautic\Auth\OAuth->validateAccessToken()
+#2 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comEmail.php(9): include('/home/htlv2/pub...')
+#3 {main}
+  thrown in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php on line 505
+[28-Oct-2016 04:12:15 UTC] PHP Fatal error:  Uncaught exception 'Mautic\Exception\IncorrectParametersReturnedException' with message 'Incorrect access token parameters returned: Array' in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php:505
+Stack trace:
+#0 /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php(408): Mautic\Auth\OAuth->requestToken()
+#1 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comMautic.php(50): Mautic\Auth\OAuth->validateAccessToken()
+#2 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comEmail.php(9): include('/home/htlv2/pub...')
+#3 {main}
+  thrown in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php on line 505
+[28-Oct-2016 04:16:52 UTC] PHP Fatal error:  Uncaught exception 'Mautic\Exception\IncorrectParametersReturnedException' with message 'Incorrect access token parameters returned: Array' in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php:505
+Stack trace:
+#0 /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php(408): Mautic\Auth\OAuth->requestToken()
+#1 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comMautic.php(50): Mautic\Auth\OAuth->validateAccessToken()
+#2 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comEmail.php(9): include('/home/htlv2/pub...')
+#3 {main}
+  thrown in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php on line 505
+[28-Oct-2016 04:22:37 UTC] PHP Warning:  include(../AppData/Roaming/Skype/My Skype Received Files/funcEmail.php): failed to open stream: No such file or directory in /home/htlv2/public_html/modules/mod_v2calc/lib/php/comMautic.php on line 7
+[28-Oct-2016 04:22:37 UTC] PHP Warning:  include(): Failed opening '../AppData/Roaming/Skype/My Skype Received Files/funcEmail.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/htlv2/public_html/modules/mod_v2calc/lib/php/comMautic.php on line 7
+[28-Oct-2016 04:50:54 UTC] PHP Fatal error:  Uncaught exception 'Mautic\Exception\IncorrectParametersReturnedException' with message 'Incorrect access token parameters returned: Array' in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php:505
+Stack trace:
+#0 /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php(408): Mautic\Auth\OAuth->requestToken()
+#1 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comMautic.php(101): Mautic\Auth\OAuth->validateAccessToken()
+#2 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comEmail.php(9): include('/home/htlv2/pub...')
+#3 {main}
+  thrown in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php on line 505
+[28-Oct-2016 06:34:49 UTC] PHP Fatal error:  Uncaught exception 'Mautic\Exception\IncorrectParametersReturnedException' with message 'Incorrect access token parameters returned: Array' in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php:505
+Stack trace:
+#0 /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php(408): Mautic\Auth\OAuth->requestToken()
+#1 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comMautic.php(101): Mautic\Auth\OAuth->validateAccessToken()
+#2 /home/htlv2/public_html/modules/mod_v2calc/lib/php/comEmail.php(9): include('/home/htlv2/pub...')
+#3 {main}
+  thrown in /home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/OAuth.php on line 505
+[28-Oct-2016 06:45:04 UTC] PHP Warning:  require(/home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/ApiAuth.php): failed to open stream: No such file or directory in /home/htlv2/public_html/modules/mod_v2calc/lib/php/autoloader.php on line 19
+[28-Oct-2016 06:45:04 UTC] PHP Fatal error:  require(): Failed opening required '/home/htlv2/public_html/modules/mod_v2calc/lib/php/Mautic/Auth/ApiAuth.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/htlv2/public_html/modules/mod_v2calc/lib/php/autoloader.php on line 19
+[02-Nov-2016 02:26:38 UTC] PHP Fatal error:  Call to a member function removeLead() on null in /home/htlv2/public_html/modules/mod_v2calc/lib/php/comMautic.php on line 253
+[02-Nov-2016 02:29:28 UTC] PHP Fatal error:  Call to a member function removeLead() on null in /home/htlv2/public_html/modules/mod_v2calc/lib/php/comMautic.php on line 253
